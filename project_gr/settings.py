@@ -63,7 +63,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'project_gr.pipelines.QuotetutorialPipeline': 300,
+   # 'project_gr.pipelines.QuotetutorialPipeline': 300,
+   'project_gr.pipelines.economy_pipelines.EconomyPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -81,7 +82,7 @@ ITEM_PIPELINES = {
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
+# HTTPCACHE_ENABLED = False
 #HTTPCACHE_EXPIRATION_SECS = 0
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []

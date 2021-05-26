@@ -10,3 +10,4 @@ class VneconomyItems(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
     content = scrapy.Field()
+    time = scrapy.Field()
